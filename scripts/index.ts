@@ -1,3 +1,5 @@
+import "./werewolf/events/EntityHurt";
+
 import { Kairo, type KairoCommand, type KairoResponse } from "@kairo-ts/router";
 import { SystemManager } from "@mc-werewolf/game-engine";
 import { properties } from "./properties";

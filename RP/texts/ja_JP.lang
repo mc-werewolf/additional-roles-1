@@ -1,0 +1,15 @@
+werewolf-vanillapack.name=マイクラ人狼 役職追加パック 壱
+werewolf-vanillapack.description=マイクラ人狼に新たな役職を追加するパックの第壱弾
+
+werewolf-additionalroles-1.role.name.nekomata=猫又
+werewolf-additionalroles-1.role.description.nekomata=自由気ままで予想がつかない猫又。自身が襲撃によって殺害された場合1/2の確率で相手も一緒に道ずれにする。
+
+werewolf-additionalroles-1.role.name.lonewolf=一匹狼
+werewolf-additionalroles-1.role.description.lonewolf=孤独を極める一匹狼。誰が人狼なのかを知っているが、人狼側は誰が一匹狼かわからない。
+
+werewolf-additionalroles-1.role.name.cultist=狂信者
+werewolf-additionalroles-1.role.description.cultist=人狼を崇拝する人狼側の人間。誰が人狼か知っている。ただし人狼側は誰が狂信者かわからない。
+
+werewolf-additionalroles-1.roleGroup.name.werewolf=人狼
+
+werewolf-additionalroles-1.skill.nekomata.dragdown.message=§c%sに道ずれにされた...§r
