@@ -2,7 +2,7 @@ werewolf-additionalroles-1.name=Werewolf Additional Roles I
 werewolf-additionalroles-1.description=The first expansion pack introducing new roles to the Werewolf game.
 
 werewolf-additionalroles-1.role.name.nekomata=Nekomata
-werewolf-additionalroles-1.role.description.nekomata=A capricious and unpredictable Nekomata. If you are killed by a werewolf attack, there is a 50% chance that the attacker will be taken down with you.
+werewolf-additionalroles-1.role.description.nekomata=A capricious and unpredictable Nekomata. If you are killed by a attack, there is a 50% chance that the attacker will be taken down with you.
 
 werewolf-additionalroles-1.role.name.lonewolf=Lone Wolf
 werewolf-additionalroles-1.role.description.lonewolf=A solitary Lone Wolf. You know who the werewolves are, but the werewolves do not know who the Lone Wolf is.
@@ -12,4 +12,8 @@ werewolf-additionalroles-1.role.description.cultist=A human who worships the wer
 
 werewolf-additionalroles-1.roleGroup.name.werewolf=Werewolves
 
-werewolf-additionalroles-1.skill.nekomata.dragdown.message=§cYou were dragged down by %s...§r
+werewolf-additionalroles-1.skill.nekomata.dragdown.message=§cYou dragged down %s!§r
+werewolf-additionalroles-1.skill.nekomata.dragdown.target.message=§cYou were dragged down by %s...§r
+
+werewolf-additionalroles-1.skill.nekomata.dragdown.protected.message=§cYou tried to drag down %s, but it was protected...§r
+werewolf-additionalroles-1.skill.nekomata.dragdown.protected.target.message=§eYou protected the dragdown from %s!§r

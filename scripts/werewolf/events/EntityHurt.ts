@@ -1,4 +1,4 @@
-import { EntityHurtAfterEvent, Player } from "@minecraft/server";
+import { EntityComponentTypes, EntityHurtAfterEvent, Player } from "@minecraft/server";
 import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 import { InGameEntityHurt } from "@mc-werewolf/game-engine";
 import { WEREWOLF_ADDITIONALROLES_ONE_TRANSLATE_IDS } from "../constants/translate";
@@ -20,11 +20,35 @@ InGameEntityHurt.afterEvent<EntityHurtAfterEvent>((ev, ctx) => {
         if (hurtEntity.id === hitPlayer.id) return;
         if (Math.random() < 0.5) {
             hitPlayer.applyDamage(999);
-            hitPlayer.sendMessage({
-                translate:
-                    WEREWOLF_ADDITIONALROLES_ONE_TRANSLATE_IDS.NEKOMATA_SKILL_DRAGDOWN_MESSAGE,
-                with: [hurtEntity.nameTag],
-            });
+
+            const hurtPlayer = hurtEntity as Player;
+            const hitPlayerHealthComponent = hitPlayer.getComponent(EntityComponentTypes.Health);
+
+            if (hitPlayerHealthComponent?.currentValue === 0) {
+                hurtPlayer.sendMessage({
+                    translate:
+                        WEREWOLF_ADDITIONALROLES_ONE_TRANSLATE_IDS.NEKOMATA_SKILL_DRAGDOWN_MESSAGE,
+                    with: [hitPlayer.nameTag],
+                });
+
+                hitPlayer.sendMessage({
+                    translate:
+                        WEREWOLF_ADDITIONALROLES_ONE_TRANSLATE_IDS.NEKOMATA_SKILL_DRAGDOWN_TARGET_MESSAGE,
+                    with: [hurtPlayer.nameTag],
+                });
+            } else {
+                hurtPlayer.sendMessage({
+                    translate:
+                        WEREWOLF_ADDITIONALROLES_ONE_TRANSLATE_IDS.NEKOMATA_SKILL_DRAGDOWN_PROTECTED_TARGET_MESSAGE,
+                    with: [hitPlayer.nameTag],
+                });
+
+                hitPlayer.sendMessage({
+                    translate:
+                        WEREWOLF_ADDITIONALROLES_ONE_TRANSLATE_IDS.NEKOMATA_SKILL_DRAGDOWN_PROTECTED_MESSAGE,
+                    with: [hurtPlayer.nameTag],
+                });
+            }
         }
     }
 });

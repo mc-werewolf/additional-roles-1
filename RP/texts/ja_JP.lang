@@ -12,4 +12,8 @@ werewolf-additionalroles-1.role.description.cultist=人狼を崇拝する人狼�
 
 werewolf-additionalroles-1.roleGroup.name.werewolf=人狼
 
-werewolf-additionalroles-1.skill.nekomata.dragdown.message=§c%sに道ずれにされた...§r
+werewolf-additionalroles-1.skill.nekomata.dragdown.message=§c%sを道ずれにした！!§r
+werewolf-additionalroles-1.skill.nekomata.dragdown.target.message=§c%sに道ずれにされた...§r
+
+werewolf-additionalroles-1.skill.nekomata.dragdown.protected.message=§c%sの道ずれを試みたが、防がれてしまった...§r
+werewolf-additionalroles-1.skill.nekomata.dragdown.protected.target.message=§e%sからの道ずれを防いだ！§r

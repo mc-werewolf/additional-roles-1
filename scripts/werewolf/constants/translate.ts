@@ -8,6 +8,13 @@ export const WEREWOLF_ADDITIONALROLES_ONE_TRANSLATE_IDS = {
     ROLE_DESCRIPTION_CULTIST: "werewolf-additionalroles-1.role.description.cultist",
 
     NEKOMATA_SKILL_DRAGDOWN_MESSAGE: "werewolf-additionalroles-1.skill.nekomata.dragdown.message",
+    NEKOMATA_SKILL_DRAGDOWN_TARGET_MESSAGE:
+        "werewolf-additionalroles-1.skill.nekomata.dragdown.target.message",
+
+    NEKOMATA_SKILL_DRAGDOWN_PROTECTED_MESSAGE:
+        "werewolf-additionalroles-1.skill.nekomata.dragdown.protected.message",
+    NEKOMATA_SKILL_DRAGDOWN_PROTECTED_TARGET_MESSAGE:
+        "werewolf-additionalroles-1.skill.nekomata.dragdown.protected.target.message",
 
     ROLE_GROUP_NAME_WEREWOLVES: "werewolf-additionalroles-1.roleGroup.name.werewolves",
 };
