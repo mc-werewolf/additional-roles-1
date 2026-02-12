@@ -15,7 +15,7 @@ export const roles: RoleDefinition[] = [
             translate: WEREWOLF_ADDITIONALROLES_ONE_TRANSLATE_IDS.ROLE_DESCRIPTION_NEKOMATA,
         },
         factionId: "villager",
-        sortIndex: 101,
+        sortIndex: 100,
     },
     {
         id: "lone-wolf",
@@ -31,7 +31,7 @@ export const roles: RoleDefinition[] = [
             },
             color: "§4",
         },
-        sortIndex: 102,
+        sortIndex: 103,
     },
     {
         id: "cultist",
@@ -50,7 +50,7 @@ export const roles: RoleDefinition[] = [
         isExcludedFromSurvivalCheck: true,
         divinationResult: "villager",
         clairvoyanceResult: "villager",
-        sortIndex: 103,
+        sortIndex: 104,
     },
 ];
 
