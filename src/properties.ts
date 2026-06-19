@@ -9,11 +9,9 @@ export const properties: KairoAddonProperties = {
         name: "Werewolf Additional Roles I",
         description: "The first expansion pack introducing new roles to the Werewolf game.",
         version: {
-            major: 1,
+            major: 0,
             minor: 1,
             patch: 0,
-            prerelease: "dev.1",
-            // build: "abc123",
         },
         min_engine_version: [1, 21, 132],
     },
