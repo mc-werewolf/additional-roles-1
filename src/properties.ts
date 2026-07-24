@@ -1,6 +1,6 @@
-import type { KairoAddonProperties } from "@kairo-js/router";
+import type { AddonProperties } from "@kairo-js/properties";
 
-export const properties: KairoAddonProperties = {
+export const properties: AddonProperties = {
     id: "werewolf-additionalroles-1", //# // a-z & 0-9 - _
     metadata: {
         authors: ["shizuku86"],
@@ -11,7 +11,7 @@ export const properties: KairoAddonProperties = {
         version: {
             major: 0,
             minor: 1,
-            patch: 0,
+            patch: 1,
         },
         min_engine_version: { major: 1, minor: 21, patch: 132 },
     },
